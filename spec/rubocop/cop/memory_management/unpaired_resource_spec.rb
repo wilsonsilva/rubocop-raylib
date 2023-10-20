@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe RuboCop::Cop::MemoryManagement::UnpairedResource, :config do
   pairs_config = {
     'Pairs' => {

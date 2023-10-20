@@ -1,3 +1,15 @@
+AllCops:
+  TargetRubyVersion: 3.2
+  NewCops: enable
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
 Naming/FileName:
  Exclude:
    - lib/rubocop-raylib.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - rubocop-raylib.gemspec
+    - spec/rubocop/cop/memory_management/unpaired_resource_spec.rb

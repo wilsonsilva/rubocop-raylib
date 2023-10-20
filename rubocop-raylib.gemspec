@@ -1,26 +1,27 @@
 # frozen_string_literal: true
 
-require_relative "lib/rubocop/raylib/version"
+require_relative 'lib/rubocop/raylib/version'
 
 Gem::Specification.new do |spec|
-  spec.name = "rubocop-raylib"
+  spec.name = 'rubocop-raylib'
   spec.version = RuboCop::Raylib::VERSION
-  spec.authors = ["Wilson Silva"]
-  spec.email = ["wilson.dsigns@gmail.com"]
+  spec.authors = ['Wilson Silva']
+  spec.email = ['wilson.dsigns@gmail.com']
 
-  spec.summary = "A linter for the raylib gem to ensure proper usage of its API."
-  spec.description = "rubocop-raylib is a specialized tool designed to ensure the correct and optimal usage "\
-    "of the raylib gem's API. By leveraging RuboCop, it provides insights and prompts for "\
-    "best practices when using raylib in Ruby applications."
-  spec.homepage = "https://raylib-ruby.com/linter"
-  spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.summary = 'A linter for the raylib gem to ensure proper usage of its API.'
+  spec.description = 'rubocop-raylib is a specialized tool designed to ensure the correct and optimal usage ' \
+                     "of the raylib gem's API. By leveraging RuboCop, it provides insights and prompts for " \
+                     'best practices when using raylib in Ruby applications.'
+  spec.homepage = 'https://raylib-ruby.com/linter'
+  spec.license = 'MIT'
+  spec.required_ruby_version = '>= 3.2.0'
 
-  spec.metadata["allowed_push_host"] = "https://rubygems.org"
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/wilsonsilva/rubocop-raylib"
-  spec.metadata["changelog_uri"] = "https://github.com/wilsonsilva/rubocop-raylib/blob/main/CHANGELOG.md"
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = 'https://github.com/wilsonsilva/rubocop-raylib'
+  spec.metadata['changelog_uri'] = 'https://github.com/wilsonsilva/rubocop-raylib/blob/main/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -30,12 +31,12 @@ Gem::Specification.new do |spec|
         f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor Gemfile])
     end
   end
-  spec.bindir = "exe"
+  spec.bindir = 'exe'
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_dependency "rubocop", "~> 1.57"
+  spec.add_dependency 'rubocop', '~> 1.57'
 
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.12"
+  spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_development_dependency 'rspec', '~> 3.12'
 end
