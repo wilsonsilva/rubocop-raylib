@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'A linter for the raylib gem to ensure proper usage of its API.'
   spec.description = "Leverages RuboCop to ensure the correct and optimal usage of the raylib gem's API"
-  spec.homepage = 'https://raylib-ruby.com/linter'
+  spec.homepage = 'https://raylib-ruby.com/learn/linter'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
 
