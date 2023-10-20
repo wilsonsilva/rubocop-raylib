@@ -9,9 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ['wilson.dsigns@gmail.com']
 
   spec.summary = 'A linter for the raylib gem to ensure proper usage of its API.'
-  spec.description = 'rubocop-raylib is a specialized tool designed to ensure the correct and optimal usage ' \
-                     "of the raylib gem's API. By leveraging RuboCop, it provides insights and prompts for " \
-                     'best practices when using raylib in Ruby applications.'
+  spec.description = "Leverages RuboCop to ensure the correct and optimal usage of the raylib gem's API"
   spec.homepage = 'https://raylib-ruby.com/linter'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
