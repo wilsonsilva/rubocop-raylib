@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'rubocop'
 require 'rubocop-raylib'
 require 'rubocop/rspec/support'
 

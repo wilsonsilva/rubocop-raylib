@@ -1,1 +1,47 @@
-# Write it!
+MemoryManagement/UnpairedResource:
+  Description: >-
+    Checks for instances where resource initialization methods are called without 
+    their corresponding closing methods. Prevents potential memory leaks or 
+    undesired behaviors.
+  Enabled: true
+  VersionAdded: 0.1
+  Severity: info
+  Pairs:
+    # rcore
+    begin_drawing: end_drawing
+    begin_mode_2d: end_mode_2d
+    begin_mode_3d: end_mode_3d
+    begin_texture_mode: end_texture_mode
+    begin_shader_mode: end_shader_mode
+    begin_blend_mode: end_blend_mode
+    begin_scissor_mode: end_scissor_mode
+    begin_vr_stereo_mode: end_vr_stereo_mode
+    init_window: close_window
+    load_directory_files: unload_directory_files
+    load_dropped_files: unload_dropped_files
+    load_file_data: unload_file_data
+    load_file_text: unload_file_text
+    load_shader: unload_shader
+    load_shader_from_memory: unload_shader
+    load_vr_stereo_config: unload_vr_stereo_config
+    # rtextures
+    load_image: unload_image
+    load_texture: unload_texture
+    load_render_texture: unload_render_texture
+    # rtext
+    load_font: unload_font
+    load_font_ex: unload_font
+    load_font_from_image: unload_font
+    load_font_from_memory: unload_font
+    load_font_data: unload_font_data
+    gen_image_font_atlas: unload_font_data
+    # rmodels
+    load_model: unload_model
+    load_model_animations: unload_model_animation
+    load_materials: unload_material
+    # raudio
+    init_audio_device: close_audio_device
+    load_wave: unload_wave
+    load_sound: unload_sound
+    load_music_stream: unload_music_stream
+    load_audio_stream: unload_audio_stream
